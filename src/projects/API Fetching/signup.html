@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up – MyBlog</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ffe0e0, #fff0f5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .signup-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 40px 30px;
+      width: 100%;
+      max-width: 600px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .signup-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+    }
+
+    .signup-card h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #d946ef;
+      font-size: 2rem;
+    }
+
+    .signup-card label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+      color: #374151;
+    }
+
+    .signup-card input {
+      width: 100%;
+      padding: 12px 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: 1px solid #cbd5e1;
+      font-size: 1rem;
+      transition: border 0.3s ease;
+    }
+
+    .signup-card input:focus {
+      outline: none;
+      border-color: #d946ef;
+      box-shadow: 0 0 0 3px rgba(217,70,239,0.2);
+    }
+
+    .signup-card button {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(45deg, #d946ef, #ec4899);
+      color: white;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .signup-card button:hover {
+      background: linear-gradient(45deg, #ec4899, #d946ef);
+      transform: translateY(-2px);
+    }
+
+    .signup-footer {
+      text-align: center;
+      margin-top: 15px;
+      color: #6b7280;
+      font-size: 0.9rem;
+    }
+
+    .signup-footer a {
+      color: #d946ef;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .signup-footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media(max-width: 500px) {
+      .signup-card {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-card">
+    <h2>Create Account</h2>
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Your full name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="you@example.com" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your password" required>
+
+      <label for="confirmPassword">Confirm Password</label>
+      <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+
+      <button type="submit">Sign Up</button>
+    </form>
+    <div class="signup-footer">
+      <p>Already have an account? <a href="login.html">Login</a></p>
+      <p><a href="/index.html">Home</a></p>
+    </div>
+  </div>
+</body>
+</html>

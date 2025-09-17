@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>API fetching</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #93b1de;
+      color: #374151;
+    }
+
+    nav {
+      background: #93b1de;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+    }
+
+    nav .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #4f46e5;
+      text-decoration: none;
+    }
+
+    nav .nav-links a {
+      margin: 0 10px;
+      color: #374151;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav .nav-links a:hover {
+      color: #4f46e5;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #6b7280;
+    }
+
+    main {
+      max-width: 600px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    main h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    main p {
+      font-size: 1rem;
+      color: #6b7280;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      background: linear-gradient(45deg, #4f46e5, #6366f1);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s ease;
+      margin: 5px;
+    }
+
+    .btn:hover {
+      background: linear-gradient(45deg, #6366f1, #4f46e5);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #ffffff;
+      border-top: 1px solid #e5e7eb;
+      color: #6b7280;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #4f46e5;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media(max-width: 500px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      main {
+        margin: 20px;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="container">
+      <a href="index.html" class="logo" style="font-style: italic;">GET-API</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to GET-API</h1>
+    <p>Your go-to platform for fetching API data and more</p>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <h1>To get work demo</h1>
+    <a href="/about.html"><button class="btn">Work</button></a>
+    <h2>Get Started Today</h2>
+    <p>To explore user data and other features, please login or sign up.</p>
+    <a href="login.html"><button class="btn">Login</button></a>
+    <a href="signup.html"><button class="btn">Sign Up</button></a>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    © <span id="year"></span> MyBlog | 
+    <a href="about.html">About</a> | 
+    <a href="login.html">Login</a> | 
+    <a href="signup.html">Sign Up</a>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
