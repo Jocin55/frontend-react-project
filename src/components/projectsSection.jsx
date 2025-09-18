@@ -5,7 +5,7 @@ const projects = [
     id: 1,
     title: "E-commerce platform",
     description: "A beautiful store for selling goods.",
-    image: "/public/media/e-commerce.png",
+    image: "/media/e-commerce.png",
     tags: ["HTML", "CSS"],
     demoUrl: "https://teal-frangipane-34c2f2.netlify.app/",
     githubUrl: "https://github.com/Jocin55/e-commerce",
@@ -15,7 +15,7 @@ const projects = [
     title: "Blog page",
     description:
       "A modern blog website with articles using a clean and minimal design.",
-    image: "/public/media/blog.png",
+    image: "/media/blog.png",
     tags: ["HTML", "Bootstrap"],
     demoUrl: "https://bucolic-bonbon-166785.netlify.app/",
     githubUrl: "https://github.com/Jocin55/blog-project",
@@ -25,7 +25,7 @@ const projects = [
     title: "API fetching landing page",
     description:
       "An website that fetches data from an API and displays it in a user-friendly manner.",
-    image: "/public/media/api.png",
+    image: "/media/api.png",
     tags: ["javascript", "CSS", "HTML"],
     demoUrl: "https://peaceful-croissant-a8d3d1.netlify.app/",
     githubUrl: "https://github.com/Jocin55/API-fetch",
